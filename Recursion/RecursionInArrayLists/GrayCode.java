@@ -20,8 +20,8 @@ public class GrayCode {
         }
         
         List<Integer> recresult = grayCode(n-1);
-        
-        for(int i = (int)Math.pow(2,n-1) - 1; i >= 0; i--){
+        int size = recresult.size();
+        for(int i = size - 1; i >= 0; i--){
             int element = recresult.get(i);
             int ntoadd = (int)Math.pow(2,(n-1));
             recresult.add(element+ntoadd);
