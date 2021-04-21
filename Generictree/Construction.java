@@ -89,9 +89,6 @@ public class Construction {
     }
   }
 
-  
-
-  
 
   public static void removeLeaves(Node node) {
     int size = node.children.size();
